@@ -1,0 +1,47 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+#primary {
+    background-color: rgb(215, 246, 250);
+}
+
+a {
+    background-color: lightblue;
+    color: rgb(71, 68, 69);
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+a:hover{
+    background-color: darkgrey;
+    color: white;
+}
+
+.background {
+    background-color: azure;
+}
+
+h1{
+    font-size: 2em;
+}
+
+img{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+p{
+    width: 40%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+footer{
+    background-color: lightblue;
+    text-align: center;
+}
