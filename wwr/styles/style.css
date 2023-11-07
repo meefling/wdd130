@@ -159,6 +159,10 @@ nav {
 .card-img, .mountains {
     width: 100%;
 }
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
 .rivers-card{
     grid-column: 2/4;
     grid-row: 2/3;
@@ -184,6 +188,7 @@ nav {
     grid-column: 6/10;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
+    padding: 10px;
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
