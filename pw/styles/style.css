@@ -62,6 +62,9 @@ footer{
 footer .social img{
     padding-top: 15px;
 }
+footer p{
+    color: white;
+}
 .logo {
     width: 80px;
 }
