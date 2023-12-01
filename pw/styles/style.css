@@ -41,6 +41,9 @@ header a {
     color: #fcfbfb;
     text-decoration: none;
 }    
+header a:hover{
+    background-color: #00a030;
+}
 header p {
     font-size: 1.2em;
 }    

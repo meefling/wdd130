@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climb On</title>
+    <style>
+        .progress-container {
+            width: 98.27%;
+            background-color: #082319;
+            position: fixed;
+            top: 0;
+            z-index: 9999;
+            padding: 5px;
+        }
+        .progress-bar {
+            width: 0;
+            height: 10px;
+            background-color: #00a030;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
     <div id="content">
     <link rel="stylesheet" href="styles/style.css">
     <header>
@@ -47,5 +66,17 @@
             </a>
         </div>
     </footer>
+    <script>
+        window.onscroll = function() {
+            progressBar();
+        };
+
+        function progressBar() {
+            var winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
 </body>
 </html>
